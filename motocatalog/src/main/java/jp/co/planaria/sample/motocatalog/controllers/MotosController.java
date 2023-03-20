@@ -2,6 +2,7 @@ package jp.co.planaria.sample.motocatalog.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -12,5 +13,9 @@ public class MotosController {
     public String hello(@RequestParam String name,Model model){
         model.addAttribute(attributeName:"name", name);
         return "test";
+ }
+ @GetMapping("/motos")
+ public String motos(){
+    return "moto_list";
  }
 }
