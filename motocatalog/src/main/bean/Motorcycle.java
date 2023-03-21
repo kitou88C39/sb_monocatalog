@@ -2,6 +2,7 @@ package jp.co.planaria.sample.bean;
 
 import java.time.LocalDateTime;
 
+@Data
 public class Motorcycle {
     
     //バイク番号
@@ -19,7 +20,7 @@ public class Motorcycle {
     //バージョン
     private Integer comment;
     //ブランドID
-    private String brandId;
+    private Brand brand;
     //バージョン
     private Integer version;
     //登録日時
