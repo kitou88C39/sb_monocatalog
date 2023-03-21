@@ -1,5 +1,6 @@
 package jp.co.planaria.sample.bean;
 
+@Data
 public class Brand {
     
 //ブランドID
