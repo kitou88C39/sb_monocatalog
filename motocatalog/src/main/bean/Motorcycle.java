@@ -2,23 +2,29 @@ package jp.co.planaria.sample.bean;
 
 import java.time.LocalDateTime;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Motorcycle {
     
     //バイク番号
-    private String motoNo;
+    private Integer motoNo;
     //バイク名
     private String motoName;
     //シート高
-    private String seatHeight;
+    private Integer seatHeight;
     //シリンダー
     private Integer cylinder;
     //冷却
-    private Integer cooling;
+    private String cooling;
     //価格
     private Integer price;
     //バージョン
-    private Integer comment;
+    private String comment;
     //ブランドID
     private Brand brand;
     //バージョン
